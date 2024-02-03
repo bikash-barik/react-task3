@@ -6,8 +6,11 @@ export default {
       backgroundImage: {
         "hero-background": "url('./assets/banner.png')",
         "imageContent-background": "url('./assets/swiss.jpg')",
+        "hotelBackground-Image":"url('./assets/hotelbg.png')",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 };

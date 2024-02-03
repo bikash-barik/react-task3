@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import companyLogo from "../assets/logos/download.png";
 import compnayLogo_Dark from "../assets/logos/logodark.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 
 let navData = [
   { name: "Home", link: "/" },
-  { name: "Tours", link: "/" },
+  { name: "Tours", link: "/tour" },
   { name: "Rooms & Suits", link: "/" },
   { name: "Gallery", link: "/" },
   { name: "About us", link: "/" },
@@ -15,6 +15,7 @@ let navData = [
 ];
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
   const [open, setOpne] = useState(false);
   const handleNavbarBackgroud = () => {

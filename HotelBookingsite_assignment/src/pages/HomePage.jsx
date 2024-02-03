@@ -23,7 +23,7 @@ export default function HomePage() {
       <RoomsCarausalSection />
       <EventSection />
       <NewsLetterSection />
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
